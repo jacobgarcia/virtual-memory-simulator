@@ -1,24 +1,25 @@
 # This is a small trace file to show how the caches
 # fill up
-8d42 R
-8d63
-43c4
-3365
-e306
-3387
-8d42
-33a0
-33c2
-8d42
-33e6
-3401
-8d42
-3420
-a98A
-a968
-33e6
-346E
-473C
-4740
-B212
-43a1
+100 10 1000000
+43a0 W
+8d40 R
+8d60 R
+43c0 W
+3360 R
+e308 W
+3380 R
+e2f0 R
+33a0 R
+33c0 W
+ccb0 R
+33e0 R
+3400 R
+ccc0 W
+3420 R
+a980 R
+a968 R
+3440 W
+3460 R
+4730 R
+4740 R
+B212 W

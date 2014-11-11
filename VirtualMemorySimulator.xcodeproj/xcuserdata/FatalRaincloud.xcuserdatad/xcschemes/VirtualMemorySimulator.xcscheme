@@ -44,7 +44,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
@@ -60,6 +60,10 @@
       <CommandLineArguments>
          <CommandLineArgument
             argument = "/Users/FatalRaincloud/Documents/VirtualMemorySimulator/VirtualMemorySimulator/VirtualMemorySimulator/trace.txt"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/FatalRaincloud/Documents/VirtualMemorySimulator/VirtualMemorySimulator/VirtualMemorySimulator/supertrace.txt"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

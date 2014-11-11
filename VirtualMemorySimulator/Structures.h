@@ -10,3 +10,13 @@ struct TLBStructure {
     unsigned int pageNumber, frameNumber, lru;
     char access, state;
 };
+
+struct pageTableStructure {
+    unsigned int frameNumber;
+    char access, state;
+};
+
+struct memoryStructure {
+    unsigned int pageNumber, frameNumber, lru;
+    char access, state;
+};

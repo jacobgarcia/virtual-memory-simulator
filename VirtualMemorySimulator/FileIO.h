@@ -23,6 +23,8 @@ struct reference {
 };
 
 enum { INVALID = -1, READ, WRITE };
+enum { NO = 0, YES };
 
-struct reference GetInt (FILE *fp);
+struct reference GetAddress (FILE *fp);
+int GetInt (FILE *fp);
 void ErrorMsg (char * function, char * message);

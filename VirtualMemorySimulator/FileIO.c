@@ -46,7 +46,7 @@
 #include "FileIO.h"
 
 
-struct reference GetInt (FILE *fp){
+struct reference GetAddress (FILE *fp){
     
     char	             c;	   	                    /* Character read */
     struct reference data;
@@ -70,6 +70,37 @@ struct reference GetInt (FILE *fp){
         data.access = WRITE;
         
     return (data);
+}
+
+int GetInt (FILE *fp){
+    int	c, i;         /* Character read and integer representation of it */
+    int sign = 1;
+    
+    /* Skip the comment */
+    do {
+        c = getc (fp);                          /* Get next character */
+        if ( c == '#' )
+            do {
+                c = getc (fp);
+            } while ( c != '\n');
+        /* This is for take account the negative sign, in case the number has */
+        if ( c == '-')
+            sign = -1;
+    } while (!isdigit(c) && !feof(fp));
+    
+    if (feof(fp))
+        return (EXIT_FAILURE);
+    else {
+        
+        /* Found 1st digit, begin conversion until a non-digit is found */
+        i = 0;
+        while (isdigit (c) && !feof(fp)){
+            i = (i * 10) + (c - '0');         /* ASCII conversion */
+            c = getc (fp);
+        }
+        
+        return (i * sign);
+    }
 }
 
 void ErrorMsg (char * function, char * message){
