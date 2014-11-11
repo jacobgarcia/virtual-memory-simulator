@@ -57,6 +57,12 @@
             ReferencedContainer = "container:VirtualMemorySimulator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "/Users/FatalRaincloud/Documents/VirtualMemorySimulator/VirtualMemorySimulator/VirtualMemorySimulator/trace.txt"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

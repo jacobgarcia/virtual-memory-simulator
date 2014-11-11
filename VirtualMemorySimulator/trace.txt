@@ -1,0 +1,24 @@
+# This is a small trace file to show how the caches
+# fill up
+8d42 R
+8d63
+43c4
+3365
+e306
+3387
+8d42
+33a0
+33c2
+8d42
+33e6
+3401
+8d42
+3420
+a98A
+a968
+33e6
+346E
+473C
+4740
+B212
+43a1
